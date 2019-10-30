@@ -1,21 +1,41 @@
-*{
-    padding: 0;
-    margin: 0;
+
+#vista-adelante-pokemon{
+    
 }
+#datos-generales-pokemon
+{
+    
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:  solid #aaaaaa;
+    margin: 10px;
+} 
+h4{
+    text-align: center;
+}
+
+#nombrePokemon{
+    padding: 10;
+    text-align: center;
+}
+
+#datos-generales-pokemon{
+    padding: 40px 70px;
+    
+}
+
 body{
     margin:20px 70px 20px;
     background-image: url(fondo.jpg) ;
-    background-size: cover; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
+    background-size: cover;
 }
 
 header{
     text-align: center;
     margin: 10px 10px 30px;
-   
 }
+
 .contenedor-pokemon{
     width: 120;
     height: 120;
