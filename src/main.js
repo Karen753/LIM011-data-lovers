@@ -1,6 +1,6 @@
 
 import POKEMON from './data/pokemon/pokemon.js';
-/*import { ordenarAlfabeticamente } from './data.js';*/
+import { ordenarAlfabeticamente } from './data.js';
 // import { mostrarListaPokemon } from './data.js';
 
 const datosPokemon = (datos) => {
