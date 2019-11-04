@@ -1,8 +1,8 @@
 
 import POKEMON from './data/pokemon/pokemon.js';
-
+/*import { ordenarAlfabeticamente } from './data.js';*/
 // import { mostrarListaPokemon } from './data.js';
-document.querySelector('#contenedor-pokemon').classList.remove('hidden');
+
 const datosPokemon = (datos) => {
   datos.forEach((poke) => {
     // Creando la vista adelante del Pokemon(numero, nombre e imagen)
@@ -51,3 +51,9 @@ const datosPokemon = (datos) => {
 };
 
 datosPokemon(POKEMON);
+
+
+// mostrar en orden alfabetico //
+
+console.log(ordenarAlfabeticamente);
+

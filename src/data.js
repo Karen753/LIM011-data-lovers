@@ -5,5 +5,8 @@ export const mostrarListaPokemon = (dataPoke) => {
   // eslint-disable-next-line no-console
   return pokedex;
 };
-
-// eslint-disable-next-line no-console
+/*export const ordenarAlfabeticamente =
+ .sort(function (a, b) {
+	
+  return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
+});*/
