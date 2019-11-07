@@ -1,3 +1,5 @@
+import pokemon from "./data/pokemon/pokemon.js";
+
 /* Manejo de data */
 
 export const filtrartipopokemon = (datapoke, tipo) => {
@@ -15,3 +17,18 @@ export const filtrarKmPokemon = (datapoke, km) => {
   const nuevoArrayKm = datapoke.filter((filt) => filt.egg.includes(km));
   return (nuevoArrayKm);
 };
+
+export const filtrarKmPokemon = (pokemon, name) => {
+  const ordenarAlfabeticamente = pokemon.sort(function (a, b) {
+  if (a.name > b.name) {
+      return 1;
+  }
+if (a.name < b.name) {
+  return -1;
+}
+return 0;
+  
+})};
+
+console.log(pokemon);
+

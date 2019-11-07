@@ -3,6 +3,7 @@
 
 import POKEMON from './data/pokemon/pokemon.js';
 import { filtrartipopokemon, filtrarDebilidadPokemon, filtrarKmPokemon } from './data.js';
+import ordenarAlfabeticamente from './data.js';
 
 const datosPokemon = (datos) => {
   datos.forEach((poke) => {
@@ -69,3 +70,11 @@ document.querySelector('#filtrar-km-pokemon').addEventListener('change', () => {
   const seleccioneKmPokemon = document.querySelector('#filtrar-km-pokemon').value;
   datosPokemon(filtrarKmPokemon(POKEMON, seleccioneKmPokemon));
 });
+
+datosPokemon(POKEMON);
+
+/*document.querySelector('#OrdenarAlfabeticamente').addEventListener("click", () => {
+  document.querySelector('#contenedor-pokemon').innerHTML = '';
+  const ordenarPokemon = document.querySelector('#OrdenarAlfabeticamente').value;
+  datosPokemon(ordenarAlfabeticamente(POKEMON,ordenarPokemon));
+});*/
