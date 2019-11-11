@@ -1,8 +1,8 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
 
-import POKEMON from './data/pokemon/pokemon.js';
-import { filtrartipopokemon, filtrarDebilidadPokemon, filtrarKmPokemon, } from './data.js';
+import POKEMON from './data/pokemon/pokemon.js'
+import { filtrartipopokemon, filtrarDebilidadPokemon, filtrarKmPokemon } from './data.js';
 import ordenarAlfabeticamente from './data/pokemon/pokemon.js';
 const datosPokemon = (datos) => {
   datos.forEach((poke) => {
@@ -75,3 +75,6 @@ document.querySelector('#filtrar-km-pokemon').addEventListener('change', () => {
   const OrdenarAlfabeticamente = document.querySelector('#ordenar-alfabeticamente').value;
   datosPokemon(ordenarAlfabeticamente(POKEMON, OrdenarAlfabeticamente));
 });
+
+//buscador 
+console.log(POKEMON);
