@@ -2,9 +2,8 @@
 /* eslint-disable no-console */
 
 import POKEMON from './data/pokemon/pokemon.js';
-import { filtrartipopokemon, filtrarDebilidadPokemon, filtrarKmPokemon } from './data.js';
-import ordenarAlfabeticamente from './data.js';
-
+import { filtrartipopokemon, filtrarDebilidadPokemon, filtrarKmPokemon, } from './data.js';
+import ordenarAlfabeticamente from './data/pokemon/pokemon.js';
 const datosPokemon = (datos) => {
   datos.forEach((poke) => {
     // Creando la vista adelante del Pokemon(numero, nombre e imagen)
@@ -70,11 +69,9 @@ document.querySelector('#filtrar-km-pokemon').addEventListener('change', () => {
   const seleccioneKmPokemon = document.querySelector('#filtrar-km-pokemon').value;
   datosPokemon(filtrarKmPokemon(POKEMON, seleccioneKmPokemon));
 });
-
-datosPokemon(POKEMON);
-
-/*document.querySelector('#OrdenarAlfabeticamente').addEventListener("click", () => {
+ 
+  document.querySelector('#ordenar-alfabeticamente').addEventListener("change", () => {
   document.querySelector('#contenedor-pokemon').innerHTML = '';
-  const ordenarPokemon = document.querySelector('#OrdenarAlfabeticamente').value;
-  datosPokemon(ordenarAlfabeticamente(POKEMON,ordenarPokemon));
-});*/
+  const OrdenarAlfabeticamente = document.querySelector('#ordenar-alfabeticamente').value;
+  datosPokemon(ordenarAlfabeticamente(POKEMON, OrdenarAlfabeticamente));
+});

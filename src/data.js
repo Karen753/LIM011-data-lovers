@@ -18,8 +18,7 @@ export const filtrarKmPokemon = (datapoke, km) => {
   return (nuevoArrayKm);
 };
 
-export const filtrarKmPokemon = (pokemon, name) => {
-  const ordenarAlfabeticamente = pokemon.sort(function (a, b) {
+/*export const OrdenarAlfabeticamente = (datapoke) => datapoke.sort(function(a, b) {
   if (a.name > b.name) {
       return 1;
   }
@@ -28,7 +27,4 @@ if (a.name < b.name) {
 }
 return 0;
   
-})};
-
-console.log(pokemon);
-
+});*/
